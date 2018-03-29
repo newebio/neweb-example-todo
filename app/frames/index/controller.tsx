@@ -11,7 +11,7 @@ export default class extends Controller<any, any, Context> {
         const todos = await this.config.context.todosStore.todos.wait();
         return {
             todos,
-            title: "Index page",
+            title: "Todo list",
         };
     }
     public async add(text: string) {

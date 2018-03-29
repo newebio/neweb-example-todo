@@ -22,7 +22,7 @@ class default_1 extends neweb_core_1.Controller {
             const todos = yield this.config.context.todosStore.todos.wait();
             return {
                 todos,
-                title: "Index page",
+                title: "Todo list",
             };
         });
     }
