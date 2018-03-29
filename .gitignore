@@ -58,3 +58,4 @@ typings/
 .env
 app/cache
 app/sessions
+todos.json
