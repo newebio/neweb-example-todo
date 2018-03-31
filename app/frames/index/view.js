@@ -18,8 +18,8 @@ class default_1 extends React.Component {
         return React.createElement("div", null,
             React.createElement("h1", null, "Todos"),
             React.createElement("div", null, this.props.data && this.props.data.error ? this.props.data.error : ""),
-            React.createElement("ul", null, this.props.data.todos.map((todo) => {
-                return React.createElement("li", null, todo.text);
+            React.createElement("ul", null, this.props.data.todos.map((todo, i) => {
+                return React.createElement("li", { key: i }, todo.text);
             })),
             React.createElement("form", { onSubmit: (e) => __awaiter(this, void 0, void 0, function* () {
                     e.preventDefault();

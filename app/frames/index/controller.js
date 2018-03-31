@@ -8,8 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const neweb_core_1 = require("neweb-core");
-class default_1 extends neweb_core_1.Controller {
+const neweb_1 = require("neweb");
+class default_1 extends neweb_1.FrameController {
     onInit() {
         return __awaiter(this, void 0, void 0, function* () {
             this.config.context.todosStore.todos.on((todos) => {

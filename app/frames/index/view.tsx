@@ -1,4 +1,4 @@
-import { IViewProps } from "neweb-core";
+import { IViewProps } from "neweb";
 import React = require("react");
 import { ITodo } from "../../store/Todos";
 
@@ -13,8 +13,8 @@ export default class extends React.Component<IViewProps<{}, {
     public render() {
         return <div><h1>Todos</h1>
             <div>{this.props.data && this.props.data.error ? this.props.data.error : ""}</div>
-            <ul>{this.props.data.todos.map((todo) => {
-                return <li>{todo.text}</li>;
+            <ul>{this.props.data.todos.map((todo, i) => {
+                return <li key={i}>{todo.text}</li>;
             })}</ul>
             <form onSubmit={async (e) => {
                 e.preventDefault();

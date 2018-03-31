@@ -1,7 +1,7 @@
-import { Controller } from "neweb-core";
+import { FrameController } from "neweb";
 import Context from "../../Context";
 
-export default class extends Controller<any, any, Context> {
+export default class extends FrameController<any, any, Context> {
     public async onInit() {
         this.config.context.todosStore.todos.on((todos) => {
             this.emit({ todos });

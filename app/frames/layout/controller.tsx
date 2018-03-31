@@ -1,6 +1,6 @@
-import { Controller } from "neweb-core";
+import { FrameController } from "neweb";
 
-export default class extends Controller<any, any, any> {
+export default class extends FrameController<any, any, any> {
     public getInitialData() {
         return {
             title: "NewebTodoExample",
