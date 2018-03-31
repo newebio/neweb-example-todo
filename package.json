@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "neweb",
     "test": "tsc && tslint --project tsconfig.json && jest --verbose --coverage",
     "watch:test": "jest --watch"
   },
