@@ -30,7 +30,7 @@
   "dependencies": {
     "@types/node": "^9.6.1",
     "@types/react": "^16.1.0",
-    "neweb": "^0.5.5",
+    "neweb": "^0.5.7",
     "onemitter": "^0.2.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
